@@ -14,7 +14,7 @@ server_script 'server.lua'
 
 -- Shared Scripts --
 shared_script 'config.lua'
-shared_script 'functions.lua'
+shared_script 'functions.lua' -- The functions.lua has client only functions in it right now, so having it shared will not be helpful, it can just be a client script
 
 -- Dependencies --
 dependency 'mythic_notify'
