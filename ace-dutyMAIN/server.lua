@@ -14,7 +14,7 @@
         if IsPlayerAceAllowed(source, Config.DutyPerm) then
             local onDutyAlready = OnDutyClients[source]
             if onDutyAlready then OnDutyClients[source] = false else OndutyClients[source] = true end
-            TriggerClientEvent('ace-duty:client:toggleduty') -- This would be an event that toggles the player off duty, sets their loadout/uniform, sends any messages on screen, etc.. ON THE CLIENT SIDE!!!
+            TriggerClientEvent('ace-duty:client:toggleduty', source) -- This would be an event that toggles the player off duty, sets their loadout/uniform, sends any messages on screen, etc.. ON THE CLIENT SIDE!!!
         end
     end)
 
